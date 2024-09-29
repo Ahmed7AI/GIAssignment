@@ -3,48 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editable Resume Builder</title>
+    <title>Static Interactive Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-        <h1>Editable Resume Builder</h1>
-        <form id="resume-form">
-            <fieldset>
-                <legend>Personal Information</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Enter Your Nmae" required>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" placeholder="Enter Your Email" required>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
-            </fieldset>
-            <fieldset>
-                <legend>Education</legend>
-                    <label for="education">Education:</label>
-                    <textarea id="education" placeholder="Enter Your Education" rows="4" required></textarea>
-                    <input type="text" id="name" placeholder="Enter Your Nmae" required>
-            </fieldset>
-            <fieldset>
-                <legend>Experience</legend>
-                    <label for="experience">Experience:</label>
-                    <textarea id="experience" placeholder="Enter Your Work Experience" rows="4" required></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>Skills</legend>
-                    <label for="skills">Skills:</label>
-                    <textarea id="skills" placeholder="Enter Your Skills" rows="4" required></textarea>
-            </fieldset>
-            <button type="submit"><b>Generate Resume</b></button>
-            
-        </form>
-        <br>
-        <!--Dynamic Resume-->
-        <div id="resume-display" contenteditable="true">
 
+
+    <body>
+        <div class="resume-container">
+            <div class="left-section">
+                <img src="danish.jpeg" alt="Profile Picture" class="profile-picture">
+                <section id="objective">
+                    <h3 style="color: white;">Career Objective</h3>
+                    <p style="text-align: justify; hyphens: auto;">
+                        Seeking a challenging position in a progressive organization with the aim
+                        to contribute positively towards the objectives of the organization to the best of my capabilities and 
+                        professional skills.
+                    </p>
+                </section>
+                <section id="certifications">
+                    <h3 style="color: white;">Certifications</h3>
+                    <p><b>CIT:</b> From Noor College of Professional Education</p>
+                    <p><b>Artificial Intelligence, Web 3.O, Metaverse:</b> From Governor House Karachi (On-going)</p>
+                </section>
+            </div>
+    
+            <div class="right-section">
+                <h1>Static Interactive Resume</h1>
+                <section id="personal-info">
+                    <h3>Personal Information</h3>
+                    <p><b>Name:</b> Danish Ahmed</p>
+                    <p><b>Phone:</b> 12314324</p>
+                    <p><b>Email:</b> <a href="mailto:xyz@gmail.com">xyz@gmail.com</a></p>
+                    <p><b>LinkedIn:</b> <a href="https://linkedin.com" target="_blank">www.LinkedIn.com</a></p>
+                </section>
+    
+                <section id="education">
+                    <h3>Education</h3>
+                    <p><b>Bachelors:</b> from University of Karachi</p>
+                    <p><b>Intermediate:</b> Karachi Board</p>
+                    <p><b>Matriculation:</b> Karachi Board</p>
+                </section>
+    
+                <section id="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Ms Office</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TyeScript</li>
+                    </ul>
+                </section>
+    
+                <section id="work-experience">
+                    <h3>Work Experience</h3>
+                    <p><b>Company:</b> Karachi Institute of Heart Deseas.</p>
+                    <p><b>Role:</b> Senior IT Manager</p>
+                </section>
+    
+                <button id="toggle-skills"><b>Hide/Show Skills</b></button>
+            </div>
         </div>
-
-        
-          
-    <script src="script.js"></script>
-</body>
+    
+        <script src="script.js"></script>
+    </body>
 </html>

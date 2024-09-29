@@ -1,86 +1,90 @@
-/* Styling form and resume sections */
-
 body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 20px;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 150px;
+
+}
+
+.resume-container {
+    display: flex;
     background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0. 0. 0. 0.1);
+
 }
 
-form {
-    margin: auto;
-    background-color: rgb(228, 242, 255);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+.left-section {
+    background-color: #2c2c2c;
+    color: white;
     padding: 20px;
-    max-width: 600px;
-}
-
-h1 {
+    width: 35%;
     text-align: center;
-    color: black;
+    border-right: 5px solid blue;
 }
 
-fieldset {
-    border: 2px solid yellowgreen;
-    border-radius: 8px;
-    padding: 20px;
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid black;
     margin-bottom: 20px;
-    background-color: aliceblue;
-}
 
-legend {
-    font-weight: bold;
-    text-align: left;
-    color: rgb(34, 29, 29);
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    color: black;
 
 }
 
-input,textarea {
-    margin-top: 4px;
-    padding: 8px;
-    width: calc(100% - 1px);
-    border: 1px solid yellowgreen;
-    border-radius: 4px;
-    box-sizing: border-box;
+
+.right-section {
+    padding: 20px;
+    width: 65%;
+    
 }
 
 button {
-    display: block;
-    width: 100%;
-    background-color: yellowgreen;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif;
     margin-top: 10px;
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 10px;
     cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+
 }
 
-button :hover {
-    color: blue;
+button:hover {
+    background-color: blue;
+
 }
 
-#resume-display {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border: 2px solid yellowgreen;
-    border-radius: 8px;
-    background-color: rgb(228, 242, 255);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    outline: none;
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-#resume-display h2 {
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
     color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px blue;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10;
+    margin: 10px;
+}
+
+ul li {
+    margin: 5px 0;
+
+
 }
