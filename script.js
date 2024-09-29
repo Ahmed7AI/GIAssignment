@@ -1,7 +1,6 @@
 var toggleButton = document.getElementById('toggle-skills');
-var skills = document.getElementById('skills');
+var skills = document.getElementById('skllls');
 toggleButton.addEventListener('click', function () {
-    // Toggling between 'block' and 'none' for the skills section
     if (skills.style.display === 'none') {
         skills.style.display = 'block';
     }
